@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bbE-2s-sAU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v24-BE-drg">
+                                        <rect key="frame" x="178.5" y="0.0" width="57" height="136.5"/>
+                                        <state key="normal" title="MGJ - B"/>
+                                        <connections>
+                                            <action selector="mg_bAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQa-qG-fCe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb8-36-fbx">
+                                        <rect key="frame" x="178" y="136.5" width="58" height="136"/>
+                                        <state key="normal" title="MGJ - C"/>
+                                        <connections>
+                                            <action selector="mg_cAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mcg-Al-o5S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFN-uy-yop">
+                                        <rect key="frame" x="185" y="272.5" width="44" height="136.5"/>
+                                        <state key="normal" title="CT - B"/>
+                                        <connections>
+                                            <action selector="ct_bAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYz-21-10L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbY-Yt-J8k">
+                                        <rect key="frame" x="184.5" y="409" width="45" height="136.5"/>
+                                        <state key="normal" title="CT - C"/>
+                                        <connections>
+                                            <action selector="ct_cAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cCc-de-2Jd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMa-xU-iW0">
+                                        <rect key="frame" x="166" y="545.5" width="82" height="136"/>
+                                        <state key="normal" title="Protocol - B"/>
+                                        <connections>
+                                            <action selector="pro_bAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="suJ-x0-0Vr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sn-tS-qaF">
+                                        <rect key="frame" x="165.5" y="681.5" width="83" height="136.5"/>
+                                        <state key="normal" title="Protocol - C"/>
+                                        <connections>
+                                            <action selector="pro_cAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b1f-fM-b15"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bbE-2s-sAU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7k6-NS-ygr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bbE-2s-sAU" secondAttribute="trailing" id="cFB-bN-MBM"/>
+                            <constraint firstItem="bbE-2s-sAU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oIe-8d-zzY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bbE-2s-sAU" secondAttribute="bottom" id="rKK-mT-aO3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
